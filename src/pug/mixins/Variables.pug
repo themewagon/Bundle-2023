@@ -1,0 +1,836 @@
+append variables
+  - var title = 'Showcase | One Hundred Pre-build website';
+  - var theme = `${name}-${version}`;
+  - var bootstrapVersion = '5.0';
+  - var attrsMain = { id: 'top', class: 'main' };
+  - var attrsLayout = { class: 'container', 'data-layout': ENV === 'PROD' ? 'container' : false }
+  - var colors = ['primary', 'secondary', 'success', 'info', 'warning', 'danger', 'light', 'dark'];
+  - var grays = ['black', 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 'white'];
+  - var colorsAll = colors.concat(grays);
+  - var footer = true;
+  - var currentPage = 'index'
+  - 
+    var data = [
+      {
+      title: 'Materio',
+      link: 'https://themewagon.com/themes/free-responsive-mui-react-nextjs-admin-dashboard-template-materio/',
+      preview: 'https://demos.themeselection.com/materio-mui-react-nextjs-admin-template-free/',
+      img: 'img01.png',
+      item: 'admin',
+      category: 'Admin & DashBoard'
+      },
+      {
+        title: 'Woody ',
+        link: 'https://themewagon.com/themes/responsive-free-bootstrap-5-html5-business-template-woody/',
+        preview: 'https://themewagon.github.io/woody/',
+        img: 'img02.png',
+        item: 'business',
+        category: 'Business'
+    },
+     {
+        title: 'Makan',
+        link: 'https://themewagon.com/themes/makan-free-responsive-bootstrap-5-html5-business-website-template/',
+        preview: 'https://themewagon.github.io/makan/',
+        img: 'img03.png',
+        item: 'business',
+        category: 'Business'
+    },
+     {
+        title: 'Dashmin',
+        link: 'https://themewagon.com/themes/dashmin-responsive-free-bootstrap-5-html5-admin-dashboard-template/',
+        preview: 'https://themewagon.github.io/dashmin/',
+        img: 'img04.png',
+       item: 'admin',
+      category: 'Admin & DashBoard'
+      }, 
+      {
+      title: 'Gohub',
+      link: 'https://themewagon.com/themes/responsive-free-travel-website-template-gohub/',
+      preview: 'https://themewagon.github.io/gohub/v1.0.0/',
+      img: 'img05.png',
+      item: 'travel',
+      category: 'Travel & Booking'
+      },
+      {
+        title: 'FitApp',
+        link: 'https://themewagon.com/themes/responsive-free-bootsrap5-html5-landing-page-template-fitapp/',
+        preview: 'https://themewagon.github.io/FitApp/',
+        img: 'img06.png',
+        item: 'landing',
+        category: 'Landing Pages'
+      },
+       {
+      title: 'Klinik',
+      link: 'https://themewagon.com/themes/responsive-free-html5-bootstrap-4-medical-website-template-klinik/',
+      preview: 'https://themewagon.github.io/klinik/',
+      img: 'img07.png',
+      item: 'medical',
+      category: 'Medical & Health Care'
+      },
+      {
+        title: 'GreenHost',
+        link: 'https://themewagon.com/themes/free-bootstrap-5-html5-web-hosting-template-greenhost/',
+        preview: 'https://themewagon.github.io/greenhost/',
+        img: 'img08.png',
+        item: 'miscellaneous',
+        category: 'Miscellaneous'
+      },
+      {
+        title: 'EduWell',
+        link: 'https://themewagon.com/themes/responsive-free-html5-bootstrap-5-educational-template-eduwell/',
+        preview: 'https://themewagon.github.io/eduwell/',
+        img: 'img09.png',
+        item: 'educational',
+        category: 'Educational'
+      },
+     {
+      title: 'Sneat',
+      link: 'https://themewagon.com/themes/free-responsive-bootstrap-5-html5-admin-template-sneat/',
+      preview: 'https://demos.themeselection.com/sneat-bootstrap-html-admin-template-free/html/',
+      img: 'img10.png',
+      item: 'admin',
+      category: 'Admin & DashBoard'
+      },
+      {
+      title: 'Darkpen',
+      link: 'https://themewagon.com/themes/free-bootstrap-5-admin-dashboard-template-darkpan/',
+      preview: 'https://themewagon.github.io/darkpan/',
+      img: 'img12.png',
+      item: 'admin',
+      category: 'Admin & DashBoard'
+      },
+      {
+      title: 'CarServ',
+      link: 'https://themewagon.com/themes/free-html5-bootstrap-5-business-website-template-carserv/',
+      preview: 'https://themewagon.github.io/carserv/',
+      img: 'img11.png',
+      item: 'miscellaneous',
+      category: 'Miscellaneous'
+      },
+      {
+      title: 'JobEntry',
+      link: 'https://themewagon.com/themes/free-responsive-html5-bootstrap-5-job-portal-website-template-jobentry/',
+      preview: 'https://themewagon.github.io/jobentry/',
+      img: 'img16.png',
+      item: 'miscellaneous',
+      category: 'Miscellaneous'
+    },
+      
+      {
+        title: 'Tivo',
+        link: 'https://themewagon.com/themes/tivo-free-bootstrap-4-html5-landing-page-website-template/',
+        preview: 'https://themewagon.github.io/tivo/',
+        img: 'img73.png',
+        item: 'landing',
+        category: 'Landing Pages'
+    },
+      {
+      title: 'LandWind',
+      link: 'https://themewagon.com/themes/landwind-free-responsive-tailwindcss-landing-page-template/',
+      preview: 'https://themewagon.github.io/landwind/',
+      img: 'img55.png',
+      item: 'landing',
+      category: 'Landing Pages'
+    },
+      {
+        title: 'Milky',
+        link: 'https://themewagon.com/themes/free-responsive-bootstrap-5-dairy-website-template-milky/',
+        preview: 'https://themewagon.github.io/milky/',
+        img: 'img23.png',
+        item: 'farming',
+        category: 'Farming'
+    },
+
+      {
+        title: 'HairCut ',
+        link: 'https://themewagon.com/themes/free-bootstrap-5-html5-responsive-hair-salon-template-haircut/',
+        preview: 'https://themewagon.github.io/haircut/',
+        img: 'img13.png',
+        item: 'miscellaneous',
+        category: 'Miscellaneous'
+      },
+      {
+        title: 'Kider',
+        link: 'https://themewagon.com/themes/free-responsive-html5-bootstrap-5-preschool-website-template-kider/',
+        preview: 'https://themewagon.github.io/kider/',
+        img: 'img14.png',
+        item: 'educational',
+        category: 'Educational'
+      },
+      {
+        title: 'Logistica ',
+        link: 'https://themewagon.com/themes/free-responsive-html5-bootstrap-5-shipping-company-website-template-logistica/',
+        preview: 'https://themewagon.github.io/logistica/',
+        img: 'img15.png',
+        item: 'miscellaneous',
+        category: 'Miscellaneous'
+      },
+      {
+        title: 'Arkitektur',
+        link: 'https://themewagon.com/themes/free-responsive-html5-bootstrap-5-architecture-website-template-arkitektur/',
+        preview: 'https://themewagon.github.io/hotelier/',
+        img: 'img17.png',
+        item: 'miscellaneous',
+        category: 'Miscellaneous'
+      },
+      {
+        title: 'Hotelier',
+        link: 'https://themewagon.com/themes/free-responsive-html5-bootstrap-5-hotel-template-hotelier/',
+        preview: 'https://themewagon.github.io/hotelier/',
+        img: 'img18.png',
+        item: 'travel',
+        category: 'Travel & Booking '
+      },
+      {
+        title: 'CakeZone',
+        link: 'https://themewagon.com/themes/free-bootstrap-5-html5-cake-shop-website-template-cakezone/',
+        preview: 'https://themewagon.github.io/cakezone/',
+        img: 'img20.png',
+        item: 'food',
+        category: 'Food & Restaurant'
+      },
+      {
+        title: 'Productly',
+        link: 'https://themewagon.com/themes/free-responsive-html5-bootstrap-5-ecommerce-website-template-productly/',
+        preview: 'https://themewagon.github.io/productly/v1.0.0/',
+        img: 'img19.png',
+        item: 'miscellaneous',
+        category: 'Miscellaneous'
+      },
+      {
+        title: 'WeBuild ',
+        link: 'https://themewagon.com/themes/free-responsive-bootstrap-5-html5-construction-company-website-template-webuild/',
+        preview: 'https://themewagon.github.io/webuild/',
+        img: 'img21.png',
+        item: 'agency',
+        category: 'Agency'
+      },
+      {
+        title: 'SEO Master ',
+        link: 'https://themewagon.com/themes/free-responsive-bootstrap-5-html5-seo-agency-website-template-seo-master/',
+        preview: 'https://themewagon.github.io/seomaster/',
+        img: 'img22.png',
+        item: 'agency',
+        category: 'Agency'
+      },
+
+      {
+        title: 'Startup',
+        link: 'https://themewagon.com/themes/free-bootstrap-5-html5-business-startup-website-template-startup/',
+        preview: 'https://themewagon.github.io/startup2/',
+        img: 'img24.png',
+        item: 'portfolio',
+        category: 'Portfolio & Photography'
+      },
+      {
+        title: 'DGcom',
+        link: 'https://themewagon.com/themes/free-bootstrap-5-html5-web-design-agency-website-template-dgcom/',
+        preview: 'https://themewagon.github.io/dgcom/',
+        img: 'img25.png',
+        item: 'agency',
+        category: 'Agency'
+      },
+      {
+        title: 'Painter',
+        link: 'https://themewagon.com/themes/free-bootstrap-5-business-website-template-painter/',
+        preview: 'https://themewagon.github.io/painter/',
+        img: 'img26.png',
+        item: 'agency',
+        category: 'Agency'
+      },
+      {
+        title: 'BizConsult',
+        link: 'https://themewagon.com/themes/bizconsult-free-responsive-bootstrap-5-html5-template/',
+        preview: 'https://themewagon.github.io/bizconsult/',
+        img: 'img27.png',
+        item: 'agency',
+        category: 'Agency'
+      },
+      {
+        title: 'Solartec',
+        link: 'https://themewagon.com/themes/free-bootstrap-5-html5-renewable-energy-website-template-solartec/',
+        preview: 'https://themewagon.github.io/solartec/',
+        img: 'img28.png',
+        item: 'agency',
+        category: 'Agency'
+      },
+      {
+        title: 'Baker',
+        link: 'https://themewagon.com/themes/bootstrap-5-html5-bakery-website-template-baker/',
+        preview: 'https://themewagon.github.io/baker/',
+        img: 'img29.png',
+        item: 'landing',
+        category: 'Landing Pages'
+      },
+      {
+        title: 'Soffer',
+        link: 'https://themewagon.com/themes/soffer-responsive-free-bootstrap-5-html5-landing-page-template/',
+        preview: 'https://themewagon.github.io/soffer/',
+        img: 'img30.png',
+        item: 'landing',
+        category: 'Landing Pages'
+      },
+      {
+        title: 'Foody',
+        link: 'https://themewagon.com/themes/free-bootstrap-5-html5-organic-food-website-template-foody/',
+        preview: 'https://themewagon.github.io/foody2/',
+        img: 'img31.png',
+        item: 'food',
+        category: 'Food & Restaurant'
+      },
+      {
+        title: 'MultiShop',
+        link: 'https://themewagon.com/themes/multishop-free-bootstrap-4-ecommerce-website-template/',
+        preview: 'https://themewagon.github.io/multishop/',
+        img: 'img32.png',
+        item: 'miscellaneous',
+        category: 'Miscellaneous'
+      },
+      {
+        title: 'FarmFresh',
+        link: 'https://themewagon.com/themes/free-bootstrap-5-responsive-organic-farm-website-template-farmfresh/',
+        preview: 'https://themewagon.github.io/farmfresh/',
+        img: 'img33.png',
+        item: 'farming',
+        category: 'Farming'
+      },
+      {
+        title: 'Faster',
+        link: 'https://themewagon.com/themes/free-responsive-bootstrap-5-logistics-company-website-template-faster/',
+        preview: 'https://themewagon.github.io/faster/',
+        img: 'img34.png',
+        item: 'agency',
+        category: 'Agency'
+      },
+      {
+        title: 'Up Construction',
+        link: 'https://themewagon.com/themes/free-responsive-bootstrap-5-html5-construction-company-website-template-upconsttruction/',
+        preview: 'https://themewagon.github.io/UpConstruction/',
+        img: 'img35.png',
+        item: 'agency',
+        category: 'Agency'
+      },
+      {
+        title: 'Drivin',
+        link: 'https://themewagon.com/themes/drivin-free-bootstrap-5-driving-school-website-template/',
+        preview: 'https://themewagon.github.io/drivin/',
+        img: 'img36.png',
+        item: 'educational',
+        category: 'Educational'
+      },
+      {
+        title: 'KidKinder',
+        link: 'https://themewagon.com/themes/free-responsive-educational-website-template-kidkinder/',
+        preview: 'https://themewagon.github.io/kidkinder/',
+        img: 'img37.png',
+        item: 'educational',
+        category: 'Educational'
+      },
+      {
+        title: 'Apex',
+        link: 'https://themewagon.com/themes/apex-free-bootstrap-5-home-renovation-website-template/',
+        preview: 'https://themewagon.github.io/apex/',
+        img: 'img38.png',
+        item: 'agency',
+        category: 'Agency'
+      },
+
+      {
+        title: 'Zoofari',
+        link: 'https://themewagon.com/themes/free-bootstrap-wildlife-website-template-zoofari/',
+        preview: 'https://themewagon.github.io/zoofari/',
+        img: 'img39.png',
+        item: 'miscellaneous',
+        category: 'Miscellaneous'
+      },
+
+      {
+        title: 'ProMan',
+        link: 'https://themewagon.com/themes/free-bootstrap-5-html5-css3-portfolio-website-template-proman/',
+        preview: 'https://themewagon.github.io/proman/',
+        img: 'img40.png',
+        item: 'portfolio',
+        category: 'Portfolio & Photography'
+      },
+
+      {
+        title: 'Property',
+        link: 'https://themewagon.com/themes/free-bootstrap-5-real-estate-website-template-property/',
+        preview: 'https://themewagon.github.io/property/',
+        img: 'img41.png',
+        item: 'agency',
+        category: 'Agency'
+      },
+
+      {
+        title: 'Insure',
+        link: 'https://themewagon.com/themes/insure-free-bootstrap-5-insurance-company-website-template/',
+        preview: 'https://themewagon.github.io/insure/',
+        img: 'img42.png',
+       item: 'agency',
+        category: 'Agency'
+      },
+
+      {
+        title: 'FotoGency',
+        link: 'https://themewagon.com/themes/free-bootstrap-5-photography-agency-website-template-fotogency/',
+        preview: 'https://themewagon.github.io/fotogency/',
+        img: 'img43.png',
+        item: 'portfolio',
+        category: 'Portfolio & Photography'
+      },
+
+      {
+        title: 'Append',
+        link: 'https://themewagon.com/themes/free-bootstrap-html5-business-website-template-append/',
+        preview: 'https://themewagon.github.io/append/',
+        img: 'img44.png',
+        item: 'business',
+        category: 'Business & Corporate'
+      },
+
+      {
+        title: 'Archiark',
+        link: 'https://themewagon.com/themes/free-bootstrap-architecture-website-template-archiark/',
+        preview: 'https://themewagon.github.io/archiark/',
+        img: 'img45.png',
+        item: 'agency',
+        category: 'Agency'
+      },
+
+      {
+        title: 'Boldo',
+        link: 'https://themewagon.com/themes/free-responsive-bootstrap-5-multipurpose-website-template-boldo/',
+        preview: 'https://themewagon.github.io/boldo/',
+        img: 'img46.png',
+        item: 'landing',
+        category: 'Landing Pages'
+      },
+
+      {
+        title: 'ChariTeam',
+        link: 'https://themewagon.com/themes/free-bootstrap-5-html-css-nonprofit-website-template-chariteam/',
+        preview: 'https://themewagon.github.io/chariteam/',
+        img: 'img47.png',
+        item: 'miscellaneous',
+        category: 'Miscellaneous'
+      },
+
+      {
+        title: 'Securex ',
+        link: 'https://themewagon.com/themes/security-service-website-template-securex/',
+        preview: 'https://themewagon.github.io/securex/',
+        img: 'img48.png',
+        item: 'agency',
+        category: 'Agency'
+      },
+
+      {
+        title: 'Sterial',
+        link: 'https://themewagon.com/themes/free-bootstrap-travel-agency-website-template-sterial/',
+        preview: 'https://themewagon.github.io/sterial/',
+        img: 'img49.png',
+        item: 'travel',
+        category: 'Travel & Booking'
+      },
+
+      {
+        title: 'AirCon',
+        link: 'https://themewagon.com/themes/free-ac-repair-servicing-website-template-aircon/',
+        preview: 'https://themewagon.github.io/aircon/',
+        img: 'img50.png',
+        item: 'business',
+        category: 'Business'
+      },
+
+      {
+        title: 'Photo Zone ',
+        link: 'https://themewagon.com/themes/photozone-free-bootstrap-5-photo-studio-website-template/',
+        preview: 'https://themewagon.github.io/photozone/',
+        img: 'img51.png',
+        item: 'portfolio',
+        category: 'Portfolio & Photography'
+      },
+
+
+      {
+        title: 'WoOX',
+        link: 'https://themewagon.com/themes/free-responsive-bootstrap-5-travel-website-template-woox-travel/',
+        preview: 'https://themewagon.github.io/wooxtravel/',
+        img: 'img53.png',
+        item: 'travel',
+        category: 'Travel & Booking'
+      },
+
+      {
+        title: 'Gardener',
+        link: 'https://themewagon.com/themes/free-responsive-bootstrap-5-gardening-website-template-gardener/',
+        preview: 'https://themewagon.github.io/gardener/',
+        img: 'img54.png',
+        item: 'farming',
+        category: 'Farming'
+      },
+
+      {
+        title: 'Prixima ',
+        link: 'https://themewagon.com/themes/free-bootstrap-5-digital-marketing-website-template-prixima/',
+        preview: 'https://themewagon.github.io/prixima/',
+        img: 'img56.png',
+        item: 'agency',
+        category: 'Agency'
+      },
+
+      {
+        title: 'Motto',
+        link: 'https://themewagon.com/themes/motto-free-responsive-bootstrap-landing-page-template/',
+        preview: 'https://themewagon.github.io/motto/',
+        img: 'img58.png',
+        item: 'landing',
+        category: 'Landing Pages'
+      },
+      {
+        title: 'Kind Heart',
+        link: 'https://themewagon.com/themes/free-responsive-bootstrap-5-html5-charity-template-kindheart/',
+        preview: 'https://themewagon.github.io/KindHeart/',
+        img: 'img59.png',
+        item: 'miscellaneous',
+        category: 'Miscellaneous'
+      },
+      {
+        title: 'Stride',
+        link: 'https://themewagon.com/themes/stride-free-responsive-bootstrap-5-landing-page-template/',
+        preview: 'https://themewagon.github.io/stride/',
+        img: 'img60.png',
+        item: 'landing',
+        category: 'Landing Pages'
+      },
+      {
+        title: 'Industro',
+        link: 'https://themewagon.com/themes/free-bootstrap-5-html5-industrial-template-industrio/',
+        preview: 'https://themewagon.github.io/Industrio/',
+        img: 'img61.png',
+        item: 'miscellaneous',
+        category: 'Miscellaneous'
+      },
+      {
+        title: 'CryptoCoin',
+        link: 'https://themewagon.com/themes/free-bootstrap-5-cryptocurrency-website-template-cryptocoin/',
+        preview: 'https://themewagon.github.io/CryptoCoin/',
+        img: 'img62.png',
+        item: 'miscellaneous',
+        category: 'Miscellaneous'
+      },
+      {
+        title: 'Finanza ',
+        link: 'https://themewagon.com/themes/free-bootstrap-5-financial-services-website-template-finanza/',
+        preview: 'https://themewagon.github.io/finanza/',
+        img: 'img63.png',
+        item: 'agency',
+        category: 'Agency'
+      },
+      {
+        title: 'Tale',
+        link: 'https://themewagon.com/themes/free-bootstrap-5-seo-agency-website-template-tale/',
+        preview: 'https://themewagon.github.io/tale/',
+        img: 'img64.png',
+        item: 'agency',
+        category: 'Agency'
+      },
+      {
+        title: 'A-World',
+        link: 'https://themewagon.com/themes/free-bootstrap-5-travel-agency-website-template-a-world/',
+        preview: 'https://themewagon.github.io/a-world/',
+        img: 'img65.png',
+        item: 'travel',
+        category: 'Travel & Booking'
+      },
+
+      {
+        title: 'Capiclean',
+        link: 'https://themewagon.com/themes/capiclean-free-bootstrap-4-home-cleaning-website-template/',
+        preview: 'https://themewagon.github.io/Capiclean/',
+        img: 'img67.png',
+        item: 'landing',
+        category: 'Landing Page'
+      },
+      {
+        title: 'Casinal',
+        link: 'https://themewagon.com/themes/free-bootstrap-4-consultancy-website-template-casinal/',
+        preview: 'https://themewagon.github.io/Casinal/',
+        img: 'img68.png',
+        item: 'business',
+        category: 'Business'
+      },
+      {
+        title: 'Klar',
+        link: 'https://themewagon.com/themes/free-bootstrap-5-html5-website-template-klar/',
+        preview: 'https://themewagon.github.io/klar/',
+        img: 'img69.png',
+        item: 'business',
+        category: 'Business'
+      },
+      {
+        title: 'Revovle',
+        link: 'https://themewagon.com/themes/free-bootstrap-blogging-website-template-revolve/',
+        preview: 'https://themewagon.github.io/revolve/',
+        img: 'img70.png',
+        item: 'landing',
+        category: 'Landing Pages'
+      },
+      {
+        title: 'Star Admin',
+        link: 'https://themewagon.com/themes/star-admin-2-free-bootstrap-4-html5-admin-dashboard-template/',
+        preview: 'https://themewagon.github.io/star-admin2-free-admin-template/',
+        img: 'img71.png',
+        item: 'admin',
+        category: 'Admin & Dashboard'
+      },
+      {
+        title: 'Trainning Studio',
+        link: 'https://themewagon.com/themes/training-studio-free-responsive-bootstrap-4-fitness-website-template/',
+        preview: 'https://themewagon.github.io/training-studio/',
+        img: 'img74.png',
+        item: 'medical',
+        category: 'Medical & Health Care'
+      },
+      {
+        title: 'VegeFoods',
+        link: 'https://themewagon.com/themes/free-responsive-fruits-vegetable-e-commerce-website-template-vegefoods/',
+        preview: 'https://themewagon.github.io/vegefoods/',
+        img: 'img75.png',
+        item: 'farming',
+        category: 'Farming'
+      },
+      {
+        title: 'Zoufarm',
+        link: 'https://themewagon.com/themes/free-responsive-bootstrap-5-html5-multipurpose-landing-page-template-zoufarm/',
+        preview: 'https://themewagon.github.io/zouFarm/v1.0.0/',
+        img: 'img76.png',
+        item: 'farming',
+        category: 'Farming'
+      },
+      {
+        title: 'Nomad Force',
+        link: 'https://themewagon.com/themes/nomad-force-free-bootstrap-5-html5-landing-page-template/',
+        preview: 'https://themewagon.github.io/nomad-force/',
+        img: 'img77.png',
+        item: 'landing ',
+        category: 'Landing Pages'
+      },
+      {
+        title: 'Orthoc',
+        link: 'https://themewagon.com/themes/free-responsive-bootstrap-4-medical-website-template-orthoc/',
+        preview: 'https://themewagon.github.io/orthoc/',
+        img: 'img78.png',
+        item: 'medical',
+        category: 'Medical & Health Care'
+      },
+      {
+        title: 'Restaurantly',
+        link: 'https://themewagon.com/themes/free-bootstrap-5-html-5-restaurant-website-template-restaurantly/',
+        preview: 'https://themewagon.github.io/restaurantly/',
+        img: 'img79.png',
+        item: 'food',
+        category: 'Food & Restaurant'
+      },
+      {
+        title: 'Restoran',
+        link: 'https://themewagon.com/themes/restoran-free-responsive-bootstrap-5-restaurant-website-template/',
+        preview: 'https://themewagon.github.io/restoran/',
+        img: 'img80.png',
+        item: 'food',
+        category: 'Food & Restaurant'
+      },
+      {
+        title: 'Ensurance',
+        link: 'https://themewagon.com/themes/ensurance-free-responsive-bootstrap-5-healthcare-website-template/',
+        preview: 'https://themewagon.github.io/ensurance/v1.0.0/',
+        img: 'img81.png',
+        item: 'agency',
+        category: 'Agency'
+      },
+      {
+        title: 'Feane ',
+        link: 'https://themewagon.com/themes/free-bootstrap-4-html5-restaurant-website-template-feane/',
+        preview: 'https://themewagon.github.io/feane/',
+        img: 'img82.png',
+        item: 'food',
+        category: 'Food & Restaurant'
+      },
+      {
+        title: 'Festava Live',
+        link: 'https://themewagon.com/themes/free-bootstrap-5-html5-landing-page-template-festavelive/',
+        preview: 'https://themewagon.github.io/FestavaLive/',
+        img: 'img83.png',
+        item: 'landing',
+        category: 'Landing Page'
+      },
+      {
+        title: 'Fruitkha',
+        link: 'https://themewagon.com/themes/fruitkha-free-bootstrap-4-responsive-food-business-template/',
+        preview: 'https://themewagon.github.io/fruitkha/',
+        img: 'img84.png',
+        item: 'food',
+        category: 'Food & Restaurant'
+      },
+      {
+        title: 'Grad School ',
+        link: 'https://themewagon.com/themes/grad-school-free-bootstrap-4-html5-educational-website-template/',
+        preview: 'https://themewagon.github.io/grad-school/',
+        img: 'img85.png',
+        item: 'educational',
+        category: 'Educational'
+      },
+      {
+        title: 'Keto',
+        link: 'https://themewagon.com/themes/keto-free-responsive-bootstrap-4-hotel-website-template/',
+        preview: 'https://themewagon.github.io/keto/',
+        img: 'img87.png',
+        item: 'food',
+        category: 'Food & Restaurant'
+      },
+      {
+        title: 'Biznews',
+        link: 'https://themewagon.com/themes/biznews-free-bootstrap-4-html5-news-portal-website-template/',
+        preview: 'https://themewagon.github.io/biznews/',
+        img: 'img88.png',
+        item: 'miscellaneous',
+        category: 'Miscellaneous'
+      },
+      {
+        title: 'Breeze',
+        link: 'https://themewagon.com/themes/breeze-free-bootstrap-4-responsive-admin-dashboard-template/',
+        preview: 'https://themewagon.github.io/Breeze-Free-Bootstrap-Admin-Template/',
+        img: 'img89.png',
+        item: 'admin',
+        category: 'Admin & Portfolio'
+      },
+      {
+        title: 'Celestial',
+        link: 'https://themewagon.com/themes/celestial-free-responsive-bootstrap-4-admin-dashboard-template/',
+        preview: 'https://themewagon.github.io/celestialAdmin-free-admin-template/',
+        img: 'img91.png',
+        item: 'admin',
+        category: 'Admin & Portfolio'
+      },
+      {
+        title: 'Connect Plus',
+        link: 'https://themewagon.com/themes/connect-plus-free-bootstrap-4-html5-admin-dashboard-template/',
+        preview: 'https://themewagon.github.io/connect-plus/',
+        img: 'img93.png',
+        item: 'admin',
+        category: 'Admin & DashBoard'
+      },
+      {
+        title: 'Corso',
+        link: 'https://themewagon.com/themes/corso-free-bootstrap-4-html5-education-website-template/',
+        preview: 'https://themewagon.github.io/corso/',
+        img: 'img94.png',
+        item: 'agency',
+        category: 'Agency'
+      },
+      {
+        title: 'DentCare',
+        link: 'https://themewagon.com/themes/dentcare-free-responsive-bootstrap-5-health-care-website-template/',
+        preview: 'https://themewagon.github.io/dentcare/',
+        img: 'img96.png',
+        item: 'medical',
+        category: 'Medical & Health Care'
+      },
+      {
+        title: 'Dgital',
+        link: 'https://themewagon.com/themes/dgital-free-responsive-bootstrap-5-creative-agency-template/',
+        preview: 'https://themewagon.github.io/digital-1/',
+        img: 'img97.png',
+        item: 'agency',
+        category: 'Agency'
+      },
+      {
+        title: 'Edu Meeting',
+        link: 'https://themewagon.com/themes/free-bootstrap-5-html5-educational-website-template-edu-meeting/',
+        preview: 'https://themewagon.github.io/edu-meeting/',
+        img: 'img98.png',
+        item: 'educational',
+        category: 'Educational'
+      },
+      {
+        title: 'Studio',
+        link: 'https://themewagon.com/themes/free-bootstrap-photography-template-studio/',
+        preview: 'https://technext.github.io/studio/',
+        img: 'img99.png',
+        item: 'portfolio',
+        category: 'Portfolio & Photography'
+      },
+      {
+        title: 'Cycle',
+        link: 'https://themewagon.com/themes/cycle/',
+        preview: 'https://themewagon.github.io/Cycle/',
+        img: 'img95.png',
+        item: 'miscellaneous',
+        category: 'Miscellaneous'
+      },
+      {
+        title: 'GrowMark',
+        link: 'https://themewagon.com/themes/free-bootstrap-5-digital-marketing-agency-template-growmark/',
+        preview: 'https://themewagon.github.io/GrowMark/',
+        img: 'img92.png',
+        item: 'agency',
+        category: 'Agency'
+      },
+      {
+        title: 'PodTalk',
+        link: 'https://themewagon.com/themes/podtalk-free-bootstrap-5-html5-website-template/',
+        preview: 'https://themewagon.github.io/PodTalk/',
+        img: 'img90.png',
+        item: 'landing',
+        category: 'Landing Pages'
+      },
+      {
+        title: 'Meyawo',
+        link: 'https://themewagon.com/themes/free-bootstrap-portfolio-website-template-meyawo/',
+        preview: 'https://themewagon.github.io/meyawo/',
+        img: 'img86.png',
+        item: 'portfolio',
+        category: 'Portfolio & Photography'
+      },
+       {
+        title: 'Cyborg',
+        link: 'https://themewagon.com/themes/free-responsive-bootstrap-5-gaming-website-template-cyborg/',
+        preview: 'https://themewagon.github.io/cyborg/',
+        img: 'img66.png',
+        item: 'landing',
+        category: 'Landing Pages'
+      },
+      {
+        title: 'Montana',
+        link: 'https://themewagon.com/themes/free-bootstrap-4-html5-responsive-hotel-booking-website-template-montana/',
+        preview: 'https://themewagon.github.io/montana/',
+        img: 'img72.png',
+        item: 'travel',
+        category: 'Travel & Booking'
+      },
+      {
+        title: 'Eduprix',
+        link: 'https://themewagon.com/themes/eduprix-free-bootstrap-5-html5-education-website-template/',
+        preview: 'https://themewagon.github.io/edu-prix/v1.0.0/',
+        img: 'img057.png',
+        item: 'educational',
+        category: 'Educational'
+      },
+      {
+        title: 'Tour',
+        link: 'https://themewagon.com/themes/free-bootstrap-5-travel-agency-website-template-tour/',
+        preview: 'https://themewagon.github.io/tour/',
+        img: 'img57.png',
+        item: 'travel',
+        category: 'Travel & Booking'
+      },
+      {
+        title: 'eLearning',
+        link: 'https://themewagon.com/themes/elearning-free-bootstrap-5-css3-education-website-template/',
+        preview: 'https://themewagon.github.io/elearning/',
+        img: 'img100.png',
+        item: 'educational',
+        category: 'Educational'
+      }
+        ];
