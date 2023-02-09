@@ -56,3 +56,16 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.font-big-shoulders{
+  font-family: 'Big Shoulders Display', cursive;
+}
+.title-100{
+  background: url('../img/text-bg.png') no-repeat, linear-gradient(117.9deg, #1BADFF 9.45%, #25E4CD 93.89%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 300px;
+  background-position: 0% 120%;
+}
+.title-text{
+  line-height: 1;
+}

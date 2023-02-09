@@ -19,13 +19,18 @@ append variables
 mixin HeroHeader
   +Section(gradient,"container-fluid ").py-0.overflow-hidden
     +Background(background)
-      .container.overflow-hidden.text-center.pt-9.pb-10.z-index-1
-        img(src=`${CWD}assets/img/hero/final.png`  alt="" width="179.39px").mb-4
-        br
-        img(src=`${CWD}assets/img/hero/100.png`  alt="" width="901px" position="relative")
-        p.text-white.fw-semi-bold.fs-11.font-nunito
+      .container.overflow-hidden.text-center.pb-9.z-index-1(style="padding-top: 105px;")
+        img(src=`${CWD}assets/img/hero/final.png`  alt="" width="179.39px").mb-6
+        h1.d-flex.text-white.text-uppdercase.font-big-shoulders.align-items-center.justify-content-center
+         span.title-100.me-2(style="font-size: 336px") 100
+         span.title-text.ms-1(style="font-size: 140px")
+          span.d-block Pre-Build
+          span.d-block Websites
+
+        //- img(src=`${CWD}assets/img/hero/100.png`  alt="" width="901px" position="relative")
+        p.text-white.fw-semi-bold.fs-11.font-nunito.d-flex.justify-content-center.me-n3
           |HTML5 template collection 
-          span.text-info.fw-bold
+          span.text-info.fw-bold.ms-2
            |2023
 
         a(href="https://github.com/themewagon/Bundle-2023/archive/refs/tags/v1.0.0.zip" target="_blank" ).text-white.btn.btn-success.mt-3.mt-lg-6.mb-5.font-nunito.fw-normal
