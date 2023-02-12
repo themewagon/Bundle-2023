@@ -123,7 +123,7 @@ h4, .h4 {
 
 @media (min-width: 1200px) {
   h4, .h4 {
-    font-size: 1.26562rem;
+    font-size: 1.26563rem;
   }
 }
 
@@ -9510,7 +9510,7 @@ fieldset:disabled .btn {
 }
 
 .fs-2 {
-  font-size: 1.26562rem !important;
+  font-size: 1.26563rem !important;
 }
 
 .fs-3 {
@@ -11644,7 +11644,7 @@ fieldset:disabled .btn {
     font-size: 1.125rem !important;
   }
   .fs-sm-2 {
-    font-size: 1.26562rem !important;
+    font-size: 1.26563rem !important;
   }
   .fs-sm-3 {
     font-size: 1.42383rem !important;
@@ -13304,7 +13304,7 @@ fieldset:disabled .btn {
     font-size: 1.125rem !important;
   }
   .fs-md-2 {
-    font-size: 1.26562rem !important;
+    font-size: 1.26563rem !important;
   }
   .fs-md-3 {
     font-size: 1.42383rem !important;
@@ -14964,7 +14964,7 @@ fieldset:disabled .btn {
     font-size: 1.125rem !important;
   }
   .fs-lg-2 {
-    font-size: 1.26562rem !important;
+    font-size: 1.26563rem !important;
   }
   .fs-lg-3 {
     font-size: 1.42383rem !important;
@@ -16624,7 +16624,7 @@ fieldset:disabled .btn {
     font-size: 1.125rem !important;
   }
   .fs-xl-2 {
-    font-size: 1.26562rem !important;
+    font-size: 1.26563rem !important;
   }
   .fs-xl-3 {
     font-size: 1.42383rem !important;
@@ -18284,7 +18284,7 @@ fieldset:disabled .btn {
     font-size: 1.125rem !important;
   }
   .fs-xxl-2 {
-    font-size: 1.26562rem !important;
+    font-size: 1.26563rem !important;
   }
   .fs-xxl-3 {
     font-size: 1.42383rem !important;
@@ -18700,17 +18700,25 @@ iframe {
   font-family: 'Big Shoulders Display', cursive;
 }
 
-.title-100 {
+.hero-title .title-100 {
   background: url("../img/text-bg.png") no-repeat, -o-linear-gradient(-332.1deg, #1BADFF 9.45%, #25E4CD 93.89%);
   background: url("../img/text-bg.png") no-repeat, linear-gradient(-117.9deg, #1BADFF 9.45%, #25E4CD 93.89%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  line-height: 300px;
   background-position: 100% 120%;
+  background-size: cover;
+  font-size: clamp(150px, 30vw, 336px);
 }
 
-.title-text {
+@media (min-width: 768px) {
+  .hero-title .title-100 {
+    line-height: 300px;
+  }
+}
+
+.hero-title .title-text {
   line-height: 1;
+  font-size: clamp(80px, 12vw, 140px);
 }
 
 /*-----------------------------------------------
