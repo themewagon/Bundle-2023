@@ -64,8 +64,7 @@
     background: url('../img/text-bg.png') no-repeat, linear-gradient(117.9deg, #1BADFF 9.45%, #25E4CD 93.89%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-size: cover;
-    font-size: 336px;
+    font-size: 334px;
 
     @include media-breakpoint-up(md){
       line-height: 288px;
@@ -74,6 +73,6 @@
   .title-text{
     line-height: 1;
     //font-size: clamp(80px, 12vw, 140px);
-    font-size: 140px;
+    font-size: 139px;
   }
 }
