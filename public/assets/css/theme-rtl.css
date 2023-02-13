@@ -18715,14 +18715,14 @@ iframe {
 
 @media (min-width: 992px) {
   .hero-title .title-100 {
-    font-size: 259px;
-    line-height: 220px;
+    font-size: 257px;
+    line-height: 223px;
   }
 }
 
 @media (min-width: 1200px) {
   .hero-title .title-100 {
-    font-size: 334px;
+    font-size: 325px;
     line-height: 288px;
   }
 }
@@ -18742,13 +18742,41 @@ iframe {
 
 @media (min-width: 992px) {
   .hero-title .title-text-2 {
-    font-size: 105px;
+    font-size: 101px;
   }
 }
 
 @media (min-width: 1200px) {
   .hero-title .title-text-2 {
-    font-size: 147px;
+    font-size: 140px;
+  }
+}
+
+.sub-title {
+  font-size: 21px;
+}
+
+@media (min-width: 576px) {
+  .sub-title {
+    font-size: 27px;
+  }
+}
+
+@media (min-width: 768px) {
+  .sub-title {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 992px) {
+  .sub-title {
+    font-size: 43.2px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sub-title {
+    font-size: 57.6px;
   }
 }
 

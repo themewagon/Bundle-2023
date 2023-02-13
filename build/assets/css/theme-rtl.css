@@ -18705,20 +18705,79 @@ iframe {
   background: url("../img/text-bg.png") no-repeat, linear-gradient(-117.9deg, #1BADFF 9.45%, #25E4CD 93.89%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-position: 100% 120%;
-  background-size: cover;
-  font-size: clamp(150px, 30vw, 336px);
 }
 
 @media (min-width: 768px) {
   .hero-title .title-100 {
-    line-height: 300px;
+    line-height: 288px;
   }
 }
 
-.hero-title .title-text {
-  line-height: 1;
-  font-size: clamp(80px, 12vw, 140px);
+@media (min-width: 992px) {
+  .hero-title .title-100 {
+    font-size: 257px;
+    line-height: 223px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-title .title-100 {
+    font-size: 325px;
+    line-height: 288px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-title .title-text {
+    font-size: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-title .title-text {
+    line-height: 1;
+    font-size: 139px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-title .title-text-2 {
+    font-size: 101px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-title .title-text-2 {
+    font-size: 140px;
+  }
+}
+
+.sub-title {
+  font-size: 21px;
+}
+
+@media (min-width: 576px) {
+  .sub-title {
+    font-size: 27px;
+  }
+}
+
+@media (min-width: 768px) {
+  .sub-title {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 992px) {
+  .sub-title {
+    font-size: 43.2px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sub-title {
+    font-size: 57.6px;
+  }
 }
 
 /*-----------------------------------------------
@@ -19343,6 +19402,16 @@ iframe {
 .shadow-hover:hover {
   -webkit-box-shadow: 0 6.25rem 5rem 0 rgba(0, 0, 0, 0.02), 0 4.05063rem 2.92813rem 0 rgba(0, 0, 0, 0.0152), 0 2.4075rem 1.5925rem 0 rgba(0, 0, 0, 0.0121), 0 1.25rem 0.8125rem 0 rgba(0, 0, 0, 0.01), 0 0.50938rem 0.4075rem 0 rgba(0, 0, 0, 0.0079), 0 0.11563rem 0.19687rem 0 rgba(0, 0, 0, 0.0048);
   box-shadow: 0 6.25rem 5rem 0 rgba(0, 0, 0, 0.02), 0 4.05063rem 2.92813rem 0 rgba(0, 0, 0, 0.0152), 0 2.4075rem 1.5925rem 0 rgba(0, 0, 0, 0.0121), 0 1.25rem 0.8125rem 0 rgba(0, 0, 0, 0.01), 0 0.50938rem 0.4075rem 0 rgba(0, 0, 0, 0.0079), 0 0.11563rem 0.19687rem 0 rgba(0, 0, 0, 0.0048);
+}
+
+.banner-section {
+  padding-top: 80px;
+}
+
+@media (min-width: 992px) {
+  .banner-section {
+    padding-top: 105px;
+  }
 }
 
 .round-btn-lg {
