@@ -69,12 +69,12 @@
       line-height: 288px;
     }
     @include media-breakpoint-up(lg){
-      font-size: 259px;
-      line-height: 220px;
+      font-size: 257px;
+      line-height: 223px;
 
     }
     @include media-breakpoint-up(xl){
-      font-size: 334px;
+      font-size: 325px;
       line-height: 288px;
     }
   }
@@ -91,10 +91,30 @@
   }
   .title-text-2{
     @include media-breakpoint-up(lg){
-      font-size: 105px;
+      font-size: 101px;
     }
     @include media-breakpoint-up(xl){
-      font-size: 147px;
+      font-size: 140px;
     }
   }
+}
+.sub-title{
+  @include media-breakpoint-up(xs){
+    font-size: 21px;
+  }
+  @include media-breakpoint-up(sm){
+    font-size: 27px;
+  }
+  @include media-breakpoint-up(md){
+    font-size: 35px;
+  }
+  @include media-breakpoint-up(lg){
+    
+    font-size: 43.2px;
+
+  }
+  @include media-breakpoint-up(xl){
+    font-size: 57.6px;
+  }
+
 }
